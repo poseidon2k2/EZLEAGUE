@@ -74,7 +74,7 @@ header{
   background: url('../img/Rectangle-2421.png');
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 725px;
 }
 
 .left-content-slider{
@@ -113,6 +113,10 @@ height: 48px;
 color: white;
 border: 0;
 
+}
+
+.first-slider .slick-dots{
+  bottom: 0px
 }
 
 .right-content-slider{
@@ -1616,16 +1620,10 @@ button{
 
 
 @media(max-width: 768px){
-  .first-section{
-    height: 950px !important;
-  }
+  
 
   .right-content-slider{
     justify-content: left;
-  }
-
-  .right-content-slider img{
-    width: 450px;
   }
 
   .content-wrap-banner{
@@ -1743,10 +1741,32 @@ button{
   .call-action form{
     width: 100%;
   }
+
+  
 }
 
+@media(max-width: 767px){
+  .first-section{
+    height: 1250px
+  }
+}
 
+@media(max-width: 650px){
+ .first-section{
+    height: 1150px
+  } 
+}
+
+@media(max-width: 550px){
+ .first-section{
+    height: 1050px
+  } 
+}
 @media(max-width: 480px){
+  .first-section{
+    height: 1000px;
+  }
+
   .content-banner-left h1{
     font-size: 35px;
   }
@@ -1806,15 +1826,11 @@ button{
     font-size: 30px;
   }
 
-  .first-section{
-    height: 950px !important;
-  }
+  
 }
 
 @media(max-width: 400px){
-  .first-section{
-    height: 800px !important;
-  }
+  
 
   .subscribe-section form input{
         width: 180px;
@@ -1835,5 +1851,7 @@ button{
     width: 40px;
     height: 40px;
   }
-
+  .first-section{
+    height: 850px;
+  }
 }
