@@ -116,7 +116,8 @@ border: 0;
 }
 
 .right-content-slider{
-  text-align: right;
+  display: flex;
+  justify-content: right;
   margin-top: 60px;
 }
 
@@ -1615,6 +1616,18 @@ button{
 
 
 @media(max-width: 768px){
+  .first-section{
+    height: 950px !important;
+  }
+
+  .right-content-slider{
+    justify-content: left;
+  }
+
+  .right-content-slider img{
+    width: 450px;
+  }
+
   .content-wrap-banner{
     padding-left: 0px;
   }
@@ -1792,9 +1805,17 @@ button{
   .more-features h3{
     font-size: 30px;
   }
+
+  .first-section{
+    height: 950px !important;
+  }
 }
 
 @media(max-width: 400px){
+  .first-section{
+    height: 800px !important;
+  }
+
   .subscribe-section form input{
         width: 180px;
     font-size: 14px;
